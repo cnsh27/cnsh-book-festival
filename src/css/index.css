@@ -37,14 +37,14 @@ header{
     width: 100%;
     height: 3rem;
     background-color: white;
-    box-shadow: 0 1px 3px 5px rgb(218, 218, 218);
+    box-shadow: 0 1px 6px 4px rgba(92, 92, 92, 0.233);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .header-warp{
-    max-width: 80rem;
+    max-width: 70rem;
     height: 2.5rem;
     width: 100%;
 }
@@ -63,22 +63,23 @@ header{
 
 #title{
     font-size: 1rem;
-    font-weight: 800;
+    font-weight: 600;
 }
 
 .headerMenus{
-    flex-grow: 4;
+    flex-grow: 8;
 }
 
 .headerMenu{
     width: 3rem;
     padding-right: 4rem;
+    cursor: pointer;
 }
 main{
     margin-top: 4rem;
     
 }
 #main-warp{
-    max-width: 80rem;
+    max-width: 70rem;
     width: 100%;
 }
