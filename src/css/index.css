@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap');
+
 html, body{
     height: 100%;
     margin: 0;
@@ -53,17 +55,12 @@ header{
     flex-grow: 1;
 }
 
-.logo{
-    width: 2rem;
-    height: 2rem;
-    border-radius: 0.5rem;
-    padding-right: 0.7rem;
-}
-
 
 #title{
-    font-size: 1rem;
+    margin-top: 0.4rem;
+    font-size: 2rem;
     font-weight: 600;
+    font-family: 'Dongle', sans-serif;
 }
 
 .headerMenus{
@@ -73,6 +70,7 @@ header{
 .headerMenu{
     width: 3rem;
     padding-right: 4rem;
+    font-weight: 600;
 }
 main{
     margin-top: 4rem;
