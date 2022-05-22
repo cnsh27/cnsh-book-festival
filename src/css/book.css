@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'Donoun-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/Donoun-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-middle{
+    align-items: center;
+}
+
+.flex-center{
+    justify-content: center;
+}
+
+
+main{
+    width: 100%;
+}
+
+.bookDefault{
+    max-width: 60rem;
+    width: 100%;
+    margin: 0;
+}
+
+.block{
+    padding: 4rem 0 4rem 0;
+}
+
+.bookImgReal{
+    max-height: 40rem;
+    max-width: 60rem;
+}
+
+.title{
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    font-weight: bold;
+}
+
+.bookName{
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: 'Donoun-Medium', sans-serif;
+}
