@@ -56,3 +56,47 @@ main{
     font-weight: 400;
     font-family: 'Donoun-Medium', sans-serif;
 }
+
+.leaflet{
+    width: 60rem;
+    height: 71.5rem;
+}
+
+.bookVideo video{
+    max-width: 60rem;
+}
+
+.ox{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 1.5rem;
+    background-color: white;
+    margin: 2rem;
+    box-shadow: 0 3px 8px 6px rgb(129, 129, 129);
+    cursor: pointer;
+}
+
+.ox img{
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.qText{
+    font-size: 2rem;
+    font-weight: bold;
+    width: 60rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.question{
+    margin-bottom: 6rem;
+}
+
+.wrong{
+    background-color: rgb(194, 76, 76) !important;
+}
+
+.correct{
+    background-color: rgb(117, 207, 117) !important;
+}

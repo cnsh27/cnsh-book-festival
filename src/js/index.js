@@ -15,7 +15,7 @@ const bookSelectBtnHtml = (thisBookCnt) => {
 const bookPosterhtml = (thisBookCnt) => {
     return `
     <li id="bookPoster${thisBookCnt}" class="bookPoster">
-        <img src="./src/img/book/book${thisBookCnt}.png" alt="">
+        <img src="./resources/book/book${thisBookCnt}.png" alt="">
     </li>
     `;
 }
@@ -80,7 +80,7 @@ rotateBookshelf(0);
 for(let i = 0; i < bookCnt; i++){
     $(`#bookPoster${i+1} img`).click(()=>{
         if(i == indexT){
-            window.location.href = '/book.html?ind='+ i;
+            window.location.href = '/book.html?ind='+ (i+1);
         }else{
             indexT = i;
             rotateBookshelf(indexT);

@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./src/img/logo.png">
     <link rel="stylesheet" href="./src/css/book.css">
-    <title>추노책장 - 동물농장</title>
+    <title>추노책장</title>
 </head>
 <body>
     <main class="flex flex-middle flex-center">
         <div class="bookDefault">
             <div class="bookImg block flex flex-center">
-                <img class="bookImgReal" src="./src/img/book/book8.png" alt="">
+                <img class="bookImgReal" src="./resources/book/book8.png" alt="">
             </div>
             <div class="bookDescription flex flex-center">
                 <div class="bookName title">
@@ -24,17 +24,35 @@
             <div class="bookLeaflet-warp block">
                 <div class="title">리플렛</div>
                 <div class="bookLeaflet">
-                    <iframe class="leaflet" src="./src/img/leaflet/book8.PDF" frameborder="0" scrolling="none"></iframe>
+                    <img class="leaflet" src="./resources/leaflet/book8.png"></img>
                 </div>
             </div>
             <div class="bookVideo-warp block">
                 <div class="title">영상 시청하기</div>
                 <div class="bookVideo">
-
+                    <video id="videoLoad" controls>
+                        <source class="video" src="" type="video/mp4">
+                        해당 브라우저는 영상 재생을 지원하지 않습니다
+                    </video>
                 </div>
+            </div>
+            <div class="reading-warp block">
+                <div class="title">북 리딩</div>
+                <div class="reading">
+                    <audio id="audioLoad" controls>
+                        <source class="audio" src="" type="audio/mp3">
+                        해당 브라우저는 음원 재생을 지원하지 않습니다
+                    </audio>
+                </div>
+            </div>
+            <div class="bookOX-warp block">
+                <div class="title">ox 퀴즈</div>
+                
+                
             </div>
         </div>
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./src/js/book.js"></script>
 </body>
 </html>
