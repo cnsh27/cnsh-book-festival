@@ -80,7 +80,7 @@ rotateBookshelf(0);
 for(let i = 0; i < bookCnt; i++){
     $(`#bookPoster${i+1} img`).click(()=>{
         if(i == indexT){
-            window.location.href = '/book.html?ind='+ (i+1);
+            window.location.href = '/cnsh-book-festival/book.html?ind='+ (i+1);
         }else{
             indexT = i;
             rotateBookshelf(indexT);

@@ -5,10 +5,10 @@ const oxBtnHtml = (isRight, text) => {
     <div class="question">
         <div class="qText">Q. ${text}</div>
         <div class="oxBtns flex flex-middle flex-center">
-            <div class="ox o flex flex-center flex-middle ${isRight ? 'right':''}">
+            <div onclick="oxBtnClick(this);" class="ox o flex flex-center flex-middle ${isRight ? 'right':''}">
                 <img src="./src/img/o.png" alt="o">
             </div>
-            <div class="ox x flex flex-center flex-middle ${isRight ? '':'right'}">
+            <div onclick="oxBtnClick(this);" class="ox x flex flex-center flex-middle ${isRight ? '':'right'}">
                 <img src="./src/img/x.png" alt="x">
             </div>
         </div>
@@ -71,23 +71,26 @@ const questionP = document.querySelector('.bookOX-warp');
     }else{
         questionP.style.display = "block";
         for(let i = 0; i < data.oxCnt; i++){
-            $('.bookOX-warp').append(oxBtnHtml(data.ox[i].a, data.ox[i].q));
+            const btn = $('.bookOX-warp').append(oxBtnHtml(data.ox[i].a, data.ox[i].q));
         }
-        $('.ox').click(()=>{
-            const me = $(this);
-            if(!me.parent().hasClass('done')){
-                const isRight = me.hasClass('right');
-                console.log(isRight);
-                if(isRight){
-                    console.log('click');
-                    me.addClass('correct');
-                }else{
-                    me.addClass('wrong');
-                }
-                me.parent().addClass('done');
-            }
-            
-        });
+        
     }
     
 })();
+
+
+function oxBtnClick(dom){
+    if(!dom.parentNode.classList.contains('done')){
+        const isRight = dom.classList.contains('right');
+        console.log(isRight);
+        if(isRight){
+            console.log('click');
+            dom.classList.add('correct');
+            dom.style.boxShadow = '0 3px 8px 6px rgb(113, 170, 105)';
+        }else{
+            dom.classList.add('wrong');
+            dom.style.boxShadow = '0 3px 8px 6px rgb(173, 93, 93)';
+        }
+        dom.parentNode.classList.add('done');
+    }
+}
