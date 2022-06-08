@@ -6,10 +6,10 @@ const oxBtnHtml = (isRight, text) => {
         <div class="qText">Q. ${text}</div>
         <div class="oxBtns flex flex-middle flex-center">
             <div onclick="oxBtnClick(this);" class="ox o flex flex-center flex-middle ${isRight ? 'right':''}">
-                <img src="./src/img/o.png" alt="o">
+                <img src="/src/img/o.png" alt="o">
             </div>
             <div onclick="oxBtnClick(this);" class="ox x flex flex-center flex-middle ${isRight ? '':'right'}">
-                <img src="./src/img/x.png" alt="x">
+                <img src="/src/img/x.png" alt="x">
             </div>
         </div>
     </div>`;
